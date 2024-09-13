@@ -1,45 +1,78 @@
-# Introduction
+# Modified OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs).
+<br/>
+The template for this applicaiton was cloned from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/) and modified. 
 
-The application template was taken from OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/assets/27232/755e85e9-3ea4-421f-b202-3b0c435ea270) from which the repository was cloned. The OpenAI API key has been added manually as an environment variable in .env 
+## Setup
+### 1. Clone repo
 
-### Install dependencies
+```shell
+git clone https://github.com/triboli/afasimakker.git
+cd openai-assistants-quickstart
+```
+### 2. Set your OpenAI API key
+Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your personal account on the OpenAI platform. Then add then OpenAI API key to `.env.example` and rename it to `.env`
+
+```shell
+OPENAI_API_KEY="INSERT KEY"
+```
+
+### 2. Integrate assistants
+
+Either create assistants with the desired instructions, model, etcetera in `create-assistants.py` or do this manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). Now add these assistantIds to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` 
+
+(Beware that the code currently is set up to have five assistants with different instructions. If another amount of assistants is wanted, remember to add more to below code snippet by continuing the switch, add a specific folder for this category in app\categories in which the correct assistantNo is set, and lastly add this category to the home page in app\page.tsx) 
+
+```shell
+// assistantNo are in each file in app\categories. assistantId can be retrieved from terminal when creating the assistants in create-assistants.py
+  switch(assistantNo) {
+    case "assistant1":
+      assistantId = "ADD";
+      break;
+    case "assistant2":
+      assistantId = "ADD";
+      break;
+    case "assistant3":
+      assistantId = "ADD";
+      break;
+    case "assistant4":
+      assistantId = "ADD";
+      break;
+    case "assistant5":
+      assistantId = "ADD";
+      break;
+    default:
+      assistantId = "ADD";
+      break;
+  }
+```
+
+### 4. Install dependencies
 
 ```shell
 npm install
-
 ```
 
-###  Run
+### 4. Run
 
 ```shell
 npm run dev
 ```
 
-### Navigate to [http://localhost:3000](http://localhost:3000).
+### 5. Navigate to [http://localhost:3000](http://localhost:3000).
 
-## Deployment
+## Overview (Modified documentation from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/))
 
-You can deploy this project to Vercel or any other platform that supports Next.js.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fopenai%2Fopenai-assistants-quickstart&env=OPENAI_API_KEY,OPENAI_ASSISTANT_ID&envDescription=API%20Keys%20and%20Instructions&envLink=https%3A%2F%2Fgithub.com%2Fopenai%2Fopenai-assistants-quickstart%2Fblob%2Fmain%2F.env.example)
-
-## Overview
-
-This project is intended to serve as a template for using the Assistants API in Next.js with [streaming](https://platform.openai.com/docs/assistants/overview/step-4-create-a-run), tool use ([code interpreter](https://platform.openai.com/docs/assistants/tools/code-interpreter) and [file search](https://platform.openai.com/docs/assistants/tools/file-search)), and [function calling](https://platform.openai.com/docs/assistants/tools/function-calling). While there are multiple pages to demonstrate each of these capabilities, they all use the same underlying assistant with all capabilities enabled.
+This project is intended to serve as a template for using the Assistants API in Next.js with [streaming](https://platform.openai.com/docs/assistants/overview/step-4-create-a-run). 
 
 The main logic for chat will be found in the `Chat` component in `app/components/chat.tsx`, and the handlers starting with `api/assistants/threads` (found in `api/assistants/threads/...`). Feel free to start your own project and copy some of this logic in! The `Chat` component itself can be copied and used directly, provided you copy the styling from `app/components/chat.module.css` as well.
 
 ### Pages
 
 - Basic Chat Example: [http://localhost:3000/examples/basic-chat](http://localhost:3000/examples/basic-chat)
-- Function Calling Example: [http://localhost:3000/examples/function-calling](http://localhost:3000/examples/function-calling)
-- File Search Example: [http://localhost:3000/examples/file-search](http://localhost:3000/examples/file-search)
-- Full-featured Example: [http://localhost:3000/examples/all](http://localhost:3000/examples/all)
 
 ### Main Components
 
 - `app/components/chat.tsx` - handles chat rendering, [streaming](https://platform.openai.com/docs/assistants/overview?context=with-streaming), and [function call](https://platform.openai.com/docs/assistants/tools/function-calling/quickstart?context=streaming&lang=node.js) forwarding
-- `app/components/file-viewer.tsx` - handles uploading, fetching, and deleting files for [file search](https://platform.openai.com/docs/assistants/tools/file-search)
 
 ### Endpoints
 
@@ -48,7 +81,3 @@ The main logic for chat will be found in the `Chat` component in `app/components
 - `api/assistants/threads/[threadId]/messages` - `POST`: send message to assistant
 - `api/assistants/threads/[threadId]/actions` - `POST`: inform assistant of the result of a function it decided to call
 - `api/assistants/files` - `GET`/`POST`/`DELETE`: fetch, upload, and delete assistant files for file search
-
-## Feedback
-
-Let us know if you have any thoughts, questions, or feedback in [this form](https://docs.google.com/forms/d/e/1FAIpQLScn_RSBryMXCZjCyWV4_ebctksVvQYWkrq90iN21l1HLv3kPg/viewform?usp=sf_link)!
