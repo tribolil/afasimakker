@@ -3,13 +3,37 @@
 The template for this application was cloned from the repository via https://github.com/openai/openai-assistants-quickstart and modified. 
 
 ## Summary
-The template was modified to allow users to access different assistants via the home page, as seen below: 
+The template was modified to allow users to access different assistants via the home page.
+
+Home page:
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
 
 The five different categories have been created to target to train different aspects of language in Danish, however can also reply in other languages because of the model being multilingual.
 
-Example of a category:
-![Skærmbillede (175)](https://github.com/user-attachments/assets/544507eb-615b-45e8-b7e7-76b32ed859e6)
+### Categories:
+
+
+
+https://github.com/user-attachments/assets/ddabc967-c7b1-420d-b9ca-52e551986601
+
+
+
+https://github.com/user-attachments/assets/342a3992-9082-4a18-81f8-4b27d91a5fa4
+
+
+
+https://github.com/user-attachments/assets/5f8e2fef-c943-422f-82d9-d1cf0f2c8e88
+
+
+
+https://github.com/user-attachments/assets/b9fb84c3-13b9-4a16-acd0-7807d28c395d
+
+
+
+https://github.com/user-attachments/assets/cadeefd9-d246-45d0-b674-3ecab9833ae1
+
+
+
 
 
 
