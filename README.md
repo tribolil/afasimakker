@@ -16,7 +16,7 @@ Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your per
 OPENAI_API_KEY="INSERT KEY"
 ```
 
-### 2. Integrate assistants
+### 3. Integrate assistants
 
 Either create assistants with the desired instructions, model, etcetera in `create-assistants.py` or do this manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). Now add these assistantIds to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` 
 
@@ -52,13 +52,13 @@ Either create assistants with the desired instructions, model, etcetera in `crea
 npm install
 ```
 
-### 4. Run
+### 5. Run
 
 ```shell
 npm run dev
 ```
 
-### 5. Navigate to [http://localhost:3000](http://localhost:3000).
+### 6. Navigate to [http://localhost:3000](http://localhost:3000).
 
 ## Overview (Modified documentation from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/))
 
