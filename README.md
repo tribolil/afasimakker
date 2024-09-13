@@ -7,7 +7,7 @@ The template for this applicaiton was cloned from [OpenAI Assistants API Quickst
 
 ```shell
 git clone https://github.com/triboli/afasimakker.git
-cd openai-assistants-quickstart
+cd afasimakker
 ```
 ### 2. Set your OpenAI API key
 Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your personal account on the OpenAI platform. Then add then OpenAI API key to `.env.example` and rename it to `.env`
