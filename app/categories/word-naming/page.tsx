@@ -5,7 +5,7 @@ import Chat from "../../components/chat";
 
 // assistantNo for word-naming
 const assistantNo = "assistant2";
-const welcomeMessage = "Lad os træne ord. Hvilket emne, som du ønsker at træne?";
+const welcomeMessage = "Lad os træne ord. Hvilket emne, ønsker du at træne?";
 
 const Home = () => {
   
