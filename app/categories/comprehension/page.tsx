@@ -5,7 +5,7 @@ import Chat from "../../components/chat";
 
 // assistantNo for comprehension
 const assistantNo = "assistant3";
-const welcomeMessage = "Lad os træne forståelse. Hvilket emne, som du ønsker at træne?";
+const welcomeMessage = "Lad os træne forståelse. Hvilket emne, ønsker du at træne?";
 
 const Home = () => {
 
