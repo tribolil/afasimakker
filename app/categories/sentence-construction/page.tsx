@@ -5,7 +5,7 @@ import Chat from "../../components/chat";
 
 // assistantNo for roleplay
 const assistantNo = "assistant4";
-const welcomeMessage = "Lad os træne at lave sætninger! Hvilket emnne, du ønsker at træne?"
+const welcomeMessage = "Lad os træne at lave sætninger. Hvilket emne, som du ønsker at træne?";
 
 const Home = () => {
   
