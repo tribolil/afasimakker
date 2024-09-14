@@ -9,27 +9,26 @@ The template was modified to allow users to access different assistants via the 
 
 The five different categories have been created to target to train different aspects of language in Danish, however can also reply in other languages because of the model being multilingual.
 
-### Categories:
+### Categories
+There have been created five different categories. The videos below are examples of each one.
+
+https://github.com/user-attachments/assets/d59c37eb-a3b4-4a95-a611-79f27ea8d7b4
+
+
+https://github.com/user-attachments/assets/e3c11e4c-1b3a-4a2c-bc02-67604769e82e
+
+
+https://github.com/user-attachments/assets/dfde75b5-4751-4a7f-846f-f286ee5d3276
+
+
+https://github.com/user-attachments/assets/29f8c25f-c66f-4c56-b479-88856e66d873
+
+
+https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 
 
 
-https://github.com/user-attachments/assets/ddabc967-c7b1-420d-b9ca-52e551986601
 
-
-
-https://github.com/user-attachments/assets/342a3992-9082-4a18-81f8-4b27d91a5fa4
-
-
-
-https://github.com/user-attachments/assets/5f8e2fef-c943-422f-82d9-d1cf0f2c8e88
-
-
-
-https://github.com/user-attachments/assets/b9fb84c3-13b9-4a16-acd0-7807d28c395d
-
-
-
-https://github.com/user-attachments/assets/cadeefd9-d246-45d0-b674-3ecab9833ae1
 
 
 
