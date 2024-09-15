@@ -1,7 +1,5 @@
 ## Afasimakker: Danish Rehabilitation Tool for People with Aphasia <br/>
-Modified OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs)
-
-The template for this application was cloned from the repository via https://github.com/openai/openai-assistants-quickstart and modified. 
+The template for this application was taken from the repository OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) and modified. The application was built with [Next.js](https://nextjs.org/docs).
 
 ### Summary
 The template was modified to allow users to access different assistants via the home page, as seen below.
