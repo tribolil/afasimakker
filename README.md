@@ -1,8 +1,9 @@
-# Modified OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs)
-<br/>
+## Afasimakker: Danish Rehabilitation Tool for People with Aphasia <br/>
+Modified OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs)
+
 The template for this application was cloned from the repository via https://github.com/openai/openai-assistants-quickstart and modified. 
 
-## Summary
+### Summary
 The template was modified to allow users to access different assistants via the home page, as seen below.
 
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
@@ -37,21 +38,21 @@ https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 
 
 
-## Setup
-### 1. Clone repo
+### Setup
+#### 1. Clone repo
 
 ```shell
 git clone https://github.com/triboli/afasimakker.git
 cd afasimakker
 ```
-### 2. Set your OpenAI API key
+#### 2. Set your OpenAI API key
 Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your personal account on the OpenAI platform. Create then a file in the project named `.env` and add the OpenAI API key following the below syntax. 
 
 ```shell
 OPENAI_API_KEY="INSERT KEY"
 ```
 
-### 3. Integrate assistants
+#### 3. Integrate assistants
 
 Either create assistants with the desired instructions, model, etcetera in `create-assistants.py` or do this manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). Now add these assistantIds to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` 
 
@@ -81,7 +82,7 @@ Either create assistants with the desired instructions, model, etcetera in `crea
   }
 ```
 
-### 4. Install dependencies
+#### 4. Install dependencies
 
 ```shell
 npm install
@@ -89,15 +90,15 @@ npm install
 
 (Beware that if an error occurs when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually.)
 
-### 5. Run
+#### 5. Run
 
 ```shell
 npm run dev
 ```
 
-### 6. Navigate to [http://localhost:3000](http://localhost:3000).
+#### 6. Navigate to [http://localhost:3000](http://localhost:3000).
 
-## Overview (Modified documentation from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/))
+### Overview (Modified documentation from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/))
 
 This project is intended to serve as a template for using the Assistants API in Next.js with [streaming](https://platform.openai.com/docs/assistants/overview/step-4-create-a-run). 
 
