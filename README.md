@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 #### 1. Clone repo
 
 ```shell
-git clone https://github.com/triboli/afasimakker.git
+git clone https://github.com/tribolil/afasimakker.git
 cd afasimakker
 ```
 #### 2. Set your OpenAI API key
