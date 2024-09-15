@@ -37,8 +37,8 @@ https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 
 
 ### Setup
-#### 1. Clone repo
-
+#### 1. Clone or download repository 
+Clone the repository or download it directly.
 ```shell
 git clone https://github.com/tribolil/afasimakker.git
 cd afasimakker
