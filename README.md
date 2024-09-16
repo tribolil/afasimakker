@@ -37,6 +37,12 @@ https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 
 
 ### Setup
+
+
+https://github.com/user-attachments/assets/69255206-31a7-4933-9680-9dad7db9b5c0
+
+
+
 #### 1. Clone or download repository 
 Clone the repository or download it directly.
 ```shell
@@ -48,6 +54,11 @@ Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your per
 
 ```shell
 OPENAI_API_KEY="INSERT KEY"
+```
+
+In terminal, add the key as an environment variable in the terminal.
+```shell
+set OPENAI_API_KEY="INSERT KEY"
 ```
 
 #### 3. Integrate assistants
@@ -94,7 +105,9 @@ npm install
 npm run dev
 ```
 
-#### 6. Navigate to [http://localhost:3000](http://localhost:3000).
+#### 6. Navigate to [http://localhost:3000](http://localhost:3000)
+
+#### 7. Terminate the application typing CTRL+C in terminal
 
 ### Overview (Modified documentation from [OpenAI Assistants API Quickstart](https://github.com/openai/openai-assistants-quickstart/))
 
