@@ -50,7 +50,7 @@ set OPENAI_API_KEY="INSERT KEY"
 ```
 
 #### 3. Integrate assistants
-For the application to run smoothly, assistants must be created. In this case, five assistants have been created with unique instructions and the selected large language model. Each assistant can be configurated to respond to other [parameters](https://platform.openai.com/docs/api-[reference](https://platform.openai.com/docs/assistants/quickstart/step-1-create-an-assistant). The assistants can be created in the file `create-assistants.py`, in this case openai has to be installed in the terminal. Alternatively, the assistants can be created manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). 
+For the application to run smoothly, assistants must be created. In this case, five assistants have been created with unique instructions and the selected large language model. Each assistant can be configurated to respond to other [parameters](https://platform.openai.com/docs/assistants/quickstart/step-1-create-an-assistant). The assistants can be created in the file `create-assistants.py`, in this case openai has to be installed in the terminal. Alternatively, the assistants can be created manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). 
 
 After doing the above, the assistantsIds have to be added to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` to the code snippet below. Each assistantId should substitute ADD. Rememeber that each assistant 
 
@@ -86,7 +86,7 @@ After doing the above, the assistantsIds have to be added to the file path `app\
 npm install
 ```
 
-(Beware that if an error occurs when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually.)
+(Beware that if an error occurs when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually followed by installing npm in the terminal, for example `pip install npm`)
 
 #### 5. Run
 
