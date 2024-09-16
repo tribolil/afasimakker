@@ -2,14 +2,14 @@
 This project, named _Afasimakker_ (meaning aphasia buddy in Danish), is based on this [template](https://github.com/openai/openai-assistants-quickstart) and modified. The template uses the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
 
 ### Interface
-The template is accessed locally. The template was modified to allow users to access five different categories from the home page, in which each category routes to a specific assistant as seen in the photo below. 
+The template is accessed locally. The template was modified to allow users to access five different categories from the home page, in which each category routes to a specific assistant as seen in the photo below. In `app\page.tsx` the routing to each category is defined.
 
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
 
-
 ### Categories
-There have been created five different categories. These five different categories have been created to target to train different aspects of language in Danish, however, other languages are also supported due to the model being multilingual.
- The videos below are examples of each one.
+Five different categories have been created to target to train different aspects of language in Danish, however, other languages are also supported due to the model being multilingual. The five categories were created to target conversation, word naming, comprehension, sentence construction, and roleplay, which can be seen in the videos below. Each category has its own folder in `app\categories` with each category having the file `page.tsx` which defines the assistant and the welcome message.
+
+Upon selecting a category, the user is met with a pre-defined welcome message with has been defined in
 
 https://github.com/user-attachments/assets/d59c37eb-a3b4-4a95-a611-79f27ea8d7b4
 
@@ -26,14 +26,13 @@ https://github.com/user-attachments/assets/29f8c25f-c66f-4c56-b479-88856e66d873
 https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
 
 ### Setup
-
+Follow the below instructions to set up the project. Below is a video example that demonstrates each step of the process.
 
 https://github.com/user-attachments/assets/69255206-31a7-4933-9680-9dad7db9b5c0
 
 
-
 #### 1. Clone or download repository 
-Clone the repository or download it directly.
+Clone the repository or download and open it directly in your development environment. 
 ```shell
 git clone https://github.com/tribolil/afasimakker.git
 cd afasimakker
@@ -45,16 +44,17 @@ Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your per
 OPENAI_API_KEY="INSERT KEY"
 ```
 
-In terminal, add the key as an environment variable in the terminal.
+In case the above does not work, add the key as an environment variable directly in the terminal.
 ```shell
 set OPENAI_API_KEY="INSERT KEY"
 ```
 
 #### 3. Integrate assistants
+For the application to run smoothly, assistants must be created. In this case, five assistants have been created with unique instructions and the selected large language model. Each assistant can be configurated to respond to other [parameters](https://platform.openai.com/docs/api-[reference](https://platform.openai.com/docs/assistants/quickstart/step-1-create-an-assistant). The assistants can be created in the file `create-assistants.py`, in this case openai has to be installed in the terminal. Alternatively, the assistants can be created manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). 
 
-Either create assistants with the desired instructions, model, etcetera in `create-assistants.py` (remember to install openai in this case) or do this manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). Now add these assistantIds to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` 
+After doing the above, the assistantsIds have to be added to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` to the code snippet below. Each assistantId should substitute ADD. Rememeber that each assistant 
 
-(Beware that the code currently is set up to have five assistants with different instructions. If another amount of assistants is wanted, remember to add more to below code snippet by continuing the switch, add a specific folder for this category in app\categories in which the correct assistantNo is set, and lastly add this category to the home page in app\page.tsx) 
+(The code currently is set to have five unique assistants. If another amount of assistants is wanted, remember to add more to below code snippet by continuing the switch in below code snippet, add a specific folder for this category in `app\categories` in which the assistantNo is defined, and lastly add this category to the home page in app\page.tsx) 
 
 ```shell
 // assistantNo are in each file in app\categories. assistantId can be retrieved from terminal when creating the assistants in create-assistants.py
