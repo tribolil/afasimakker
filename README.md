@@ -1,15 +1,15 @@
 ## A Danish Rehabilitation Tool for People with Aphasia <br/>
-This project named _Afasimakker_ (meaning aphasia buddy in Danish) is based on this [template](https://github.com/openai/openai-assistants-quickstart) and modified. Them template uses the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
+This project, named _Afasimakker_ (meaning aphasia buddy in Danish), is based on this [template](https://github.com/openai/openai-assistants-quickstart) and modified. The template uses the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
 
-### Summary
-The template was modified to allow users to access different assistants via the home page, as seen below.
+### Interface
+The template is accessed locally. The template was modified to allow users to access five different categories from the home page, in which each category routes to a specific assistant as seen in the photo below. 
 
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
 
-The five different categories have been created to target to train different aspects of language in Danish, however can also reply in other languages because of the model being multilingual.
 
 ### Categories
-There have been created five different categories. The videos below are examples of each one.
+There have been created five different categories. These five different categories have been created to target to train different aspects of language in Danish, however, other languages are also supported due to the model being multilingual.
+ The videos below are examples of each one.
 
 https://github.com/user-attachments/assets/d59c37eb-a3b4-4a95-a611-79f27ea8d7b4
 
@@ -24,17 +24,6 @@ https://github.com/user-attachments/assets/29f8c25f-c66f-4c56-b479-88856e66d873
 
 
 https://github.com/user-attachments/assets/27637b17-0d60-44dd-ae76-ac34a1ebfd7a
-
-
-
-
-
-
-
-
-
-
-
 
 ### Setup
 
