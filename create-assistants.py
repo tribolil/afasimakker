@@ -6,7 +6,7 @@ import os
 
 api_key=os.environ.get("OPENAI_API_KEY")
 
-# Below you can create assistants to fit the specific needs by modifying the instructions, temperature, and top P. (ADD EXPLANATION OF THESE)
+# Below you can create assistants to fit the specific needs by modifying the instructions, temperature, and top P
 
 assistant1 = openai.beta.assistants.create(
     name="conversation",
