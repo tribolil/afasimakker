@@ -1,5 +1,5 @@
 ## A Danish Rehabilitation Tool for People with Aphasia <br/>
-This project named _afasimakker_ (meaning aphasia buddy in Danish) is based on this [template](https://github.com/openai/openai-assistants-quickstart) and modified. Them template uses the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
+This project named _Afasimakker_ (meaning aphasia buddy in Danish) is based on this [template](https://github.com/openai/openai-assistants-quickstart) and modified. Them template uses the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
 
 ### Summary
 The template was modified to allow users to access different assistants via the home page, as seen below.
