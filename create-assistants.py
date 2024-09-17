@@ -10,7 +10,7 @@ api_key=os.environ.get("OPENAI_API_KEY")
 
 assistant1 = openai.beta.assistants.create(
     name="conversation",
-    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at træne samtale i hvilket som helst emne ved at prompte mig, svare kortfattet, og altid spørge om opfølgende spørgsmål. Baseret på mit input, skræddersy dit output til at være i stigend grad sværere eller lettere.",
+    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at træne samtale i hvilket som helst emne ved at prompte mig, svare kortfattet, og altid spørge om opfølgende spørgsmål. Baseret på mit input, skræddersy dit output til at være i stigende grad sværere eller lettere.",
     model="gpt-4o-mini",
     temperature=1,
     top_p=1,
