@@ -7,7 +7,7 @@ The template is accessed locally and was modified to enable users to access five
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
 
 ### Categories
-Five different categories have been created to target to train different aspects of language in Danish, however, other languages are also supported due to the model being multilingual. The five categories were created to target conversation, word naming, comprehension, sentence construction, and roleplay, which can be seen in the videos below. Each category has its own folder in `app\categories` with each category having the file `page.tsx` which defines the assistant and the welcome message.
+Five different categories have been created to target training different aspects of language in Danish. However, other languages are also supported due to the model being multilingual. The five categories were created to target conversation, word naming, comprehension, sentence construction, and roleplay, which is shown in the videos below. Each category has its own folder in `app\categories`, with each category having the file `page.tsx`, which defines the assistant and the welcome message.
 
 https://github.com/user-attachments/assets/d59c37eb-a3b4-4a95-a611-79f27ea8d7b4
 
@@ -36,23 +36,23 @@ git clone https://github.com/tribolil/afasimakker.git
 cd afasimakker
 ```
 #### 2. Set your OpenAI API key
-Create an [OpenAI API key](https://platform.openai.com/api-keys) key on your personal account on the OpenAI platform. Create then a file in the project named `.env` and add the OpenAI API key following the below syntax. 
+Create an [OpenAI API key](https://platform.openai.com/api-keys) on your personal account on the OpenAI platform. Then, create a file in the project named `.env` and add the OpenAI API key using the syntax below. 
 
 ```shell
 OPENAI_API_KEY="INSERT KEY"
 ```
 
-In case the above does not work, add the key as an environment variable directly in the terminal.
+If above method does not work, add the key as an environment variable directly in the terminal, as show below: 
 ```shell
 set OPENAI_API_KEY="INSERT KEY"
 ```
 
 #### 3. Integrate assistants
-For the application to run smoothly, assistants must be created. In this case, five assistants have been created with unique instructions and the selected large language model. Each assistant can be configurated to respond to other [parameters](https://platform.openai.com/docs/assistants/quickstart/step-1-create-an-assistant). The assistants can be created in the file `create-assistants.py`, in this case openai has to be installed in the terminal. Alternatively, the assistants can be created manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). 
+For the application to run smoothly, assistants must be created. In this case, five assistants have been created with unique instructions and the selected large language model. Each assistant can be configured to respond to other [parameters](https://platform.openai.com/docs/assistants/quickstart/step-1-create-an-assistant). The assistants can be created in the file `create-assistants.py`; in this case, openai has to be installed in the terminal, as can be seen in the previous link. Alternatively, the assistants can be created manually on your own personal account on [OpenAI platform](https://platform.openai.com/playground/assistants). 
 
-After doing the above, the assistantsIds have to be added to the file path `app\api\assistants\threads\[threadId]\messages\route.ts` to the code snippet below. Each assistantId should substitute ADD. Rememeber that each assistant 
+After doing the above, the assistantsIds should be added to the file path `app\api\assistants\threads\[threadId]\messages\route.ts`, where each assistantId replace the ADD as shown in the code snippet below. 
 
-(The code currently is set to have five unique assistants. If another amount of assistants is wanted, remember to add more to below code snippet by continuing the switch in below code snippet, add a specific folder for this category in `app\categories` in which the assistantNo is defined, and lastly add this category to the home page in app\page.tsx) 
+(Note that this code is set to have five unique assistants. If another amount of assistants is wanted, remember to add more using the code snippet below by continuing the switch statement, add a specific folder for this category in `app\categories` where the assistantNo is defined, and lastly, add this category to the home page in app\page.tsx).
 
 ```shell
 // assistantNo are in each file in app\categories. assistantId can be retrieved from terminal when creating the assistants in create-assistants.py
@@ -84,7 +84,7 @@ After doing the above, the assistantsIds have to be added to the file path `app\
 npm install
 ```
 
-(Beware that if an error occurs when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually and restarting the development environment. Then install npm in the terminal again in the terminal)
+(Note that in case of an error occurring when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually and restart the development environment. After this, remember to reinstall npm in the terminal).
 
 #### 5. Run
 
