@@ -84,7 +84,7 @@ After doing the above, the assistantsIds should be added to the file path `app\a
 npm install
 ```
 
-(Note that in case of an error occurring when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually and restart the development environment. After this, remember to reinstall npm in the terminal).
+If the above results in an error when trying to install the depedency, navigate to the webiste of [Node.js](https://nodejs.org/en) to download the package manually and restart the development environment. After this, remember to reinstall npm in the terminal.
 
 #### 5. Run
 
