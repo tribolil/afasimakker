@@ -2,7 +2,7 @@
 This project, named _Afasimakker_ (meaning aphasia buddy in Danish), is based on a modified [template](https://github.com/openai/openai-assistants-quickstart) that utilises the OpenAI [Assistants API](https://platform.openai.com/docs/assistants/overview) with [Next.js](https://nextjs.org/docs). 
 
 ### Interface
-The template is accessed locally and was modified to enable users to access five different categories from the home page. Each category routes to a specific assistant as depicted in the photo below. In `app\page.tsx` the routing to each category is defined.
+The template is accessed locally and was modified to enable users to access five different categories from the homepage. Each category routes to a specific assistant as depicted in the photo below. In `app\page.tsx` the routing to each category is defined.
 
 ![Skærmbillede (176)](https://github.com/user-attachments/assets/34bee224-e725-43f7-94b9-4fd3da91bdbd)
 
