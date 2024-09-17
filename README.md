@@ -9,8 +9,6 @@ The template is accessed locally. The template was modified to allow users to ac
 ### Categories
 Five different categories have been created to target to train different aspects of language in Danish, however, other languages are also supported due to the model being multilingual. The five categories were created to target conversation, word naming, comprehension, sentence construction, and roleplay, which can be seen in the videos below. Each category has its own folder in `app\categories` with each category having the file `page.tsx` which defines the assistant and the welcome message.
 
-Upon selecting a category, the user is met with a pre-defined welcome message with has been defined in
-
 https://github.com/user-attachments/assets/d59c37eb-a3b4-4a95-a611-79f27ea8d7b4
 
 
