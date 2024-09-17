@@ -6,11 +6,11 @@ import os
 
 api_key=os.environ.get("OPENAI_API_KEY")
 
-# Below you can create assistants to fit the specific needs by modifying the instructions, temperature, and top P
+# Below you can create assistants to fit the specific needs by modifying the instructions, temperature, and top P.
 
 assistant1 = openai.beta.assistants.create(
     name="conversation",
-    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at træne samtale i hvilket som helst emne ved at prompte mig, svare kortfattet, og altid spørge om opfølgende spørgsmål. Baseret på mit input, skræddersy dit output til at være i stigende grad sværere eller lettere.",
+    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at øve samtale i hvilket som helst emne ved at prompte mig, svare kortfattet, og altid spørge om opfølgende spørgsmål. Baseret på mit input, skræddersy dit output til at være i stigend grad sværere eller lettere.",
     model="gpt-4o-mini",
     temperature=1,
     top_p=1,
@@ -19,7 +19,7 @@ print("AssistantId for assistant1 is:", assistant1.id)
 
 assistant2 = openai.beta.assistants.create(
     name="word-naming",
-    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at træne ordbenævnelse. Spørg hvilket emne jeg ønsker at træne, og vælg så en emoji, som repræsenterer et objekt og bed mit navngive det objekt. Når jeg har svarer, så be- eller afkræft, og spørg nu efter en beskrivelse af dette. Gentag denne processs med en anden emoji. Husk du skal svare meget kortfattet og altid spørge mig om opfølgende spørgsmål. Afhængig af mit input, gør øvelsen sværere eller lettere.",
+    instructions="Du er en hjælpsom, engagerende talepædagog, som hjælper mig med at øve ordbenævnelse. Spørg hvilket emne jeg ønsker at træne, og vælg så en emoji, som repræsenterer et objekt og bed mit navngive det objekt. Når jeg har svarer, så be- eller afkræft, og spørg nu efter en beskrivelse af dette. Gentag denne processs med en anden emoji. Husk du skal svare meget kortfattet og altid spørge mig om opfølgende spørgsmål. Afhængig af mit input, gør øvelsen sværere eller lettere.",
     model="gpt-4o-mini",
     temperature=1,
     top_p=1,
